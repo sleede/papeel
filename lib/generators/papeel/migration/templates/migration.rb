@@ -7,8 +7,8 @@ class PapeelCreateRoles < ActiveRecord::Migration
       t.timestamps null: false
     end
 
-    add_index :roles, :name
-    add_index :roles, [:user_id, :name]
-    add_index :roles, [:resource_type, :resource_id, :name]
+    add_index :papeel_roles, :name
+    add_index :papeel_roles, [:user_id, :name]
+    add_index :papeel_roles, [:resource_type, :resource_id, :name]
   end
 end

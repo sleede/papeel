@@ -1,3 +1,9 @@
 = Papeel
 
-This project rocks and uses MIT-LICENSE.
+== Setup
+
+```
+rails generate papeel:initializer
+rails generate papeel:migration
+rake db:migrate
+```

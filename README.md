@@ -1,6 +1,6 @@
-= Papeel
+# Papeel
 
-== Setup
+## Setup
 
 ```bash
 rails generate papeel:initializer

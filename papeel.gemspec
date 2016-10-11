@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Papeel::VERSION
   s.authors     = ["Nicolas Florentin"]
   s.email       = ["nicolas@sleede.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/sleede/papeel"
   s.summary     = "simple roles library for rails projects"
   s.description = "simple roles library for rails projects"
   s.license     = "MIT"

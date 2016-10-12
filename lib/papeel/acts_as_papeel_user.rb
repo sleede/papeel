@@ -10,7 +10,7 @@ module Papeel
         include Papeel::ActsAsPapeelUser::LocalInstanceMethods
 
         class_eval do
-          has_many :roles, class_name: "Papeel::Role", dependent: :destroy
+          has_many :roles, class_name: "Papeel::Role", dependent: :destroy, inverse_of: :user
         end
 
         Papeel.config.roles.each do |role|

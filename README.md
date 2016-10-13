@@ -8,7 +8,7 @@ rails generate papeel:migration
 rake db:migrate
 ```
 
-In `config/initializer/papeel.rb`, whitelist your roles:
+In `config/initializer/papeel.rb`, whitelist your roles (needed to validate a role):
 ```ruby
 Papeel.configure do |config|
   config.roles = [:super_admin, :admin]
@@ -98,3 +98,9 @@ User.super_admin
 User.admin
 # same but for admin role
 ```
+
+### acts_as_papeel_resource
+
+#### instance methods
+
+It adds a *polymorphic* relation `has_many :roles_as_resource` to the resource class.
